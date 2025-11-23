@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage Kitchen - Plant-Based Recipes & Vegetarian Delights</title>
+    <meta name="description" content="Discover delicious plant-based and vegetarian recipes. From fresh salads to nourishing meals, embrace a healthier lifestyle with Sage Kitchen.">
+    <meta name="author" content="Sage Kitchen Team">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Sage Kitchen</h1>
+            <p class="hero-motto">"Where Plants Meet Passion"</p>
+            <p class="hero-description">
+                Temukan kelezatan dalam kesederhanaan. Resep vegetarian yang membuktikan bahwa
+                makanan nabati bisa begitu istimewa.
+            </p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 20s3-3 3-8-3-8-3-8m10 16s-3-3-3-8 3-8 3-8"></path>
+                    </svg>
+                    <span>100% Plant-Based</span>
+                </div>
+                <div class="feature-item">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>Resep Mudah</span>
+                </div>
+                <div class="feature-item">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    <span>Penuh Nutrisi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="Semua">Semua</button>
+                <button class="filter-btn" data-category="Hidangan Utama">Hidangan Utama</button>
+                <button class="filter-btn" data-category="Salad">Salad</button>
+                <button class="filter-btn" data-category="Buah">Buah</button>
+                <button class="filter-btn" data-category="Sarapan Sehat">Sarapan Sehat</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="recipes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Koleksi Resep Plant-Based</h2>
+                <p class="section-description">Klik pada resep untuk melihat detail bahan dan cara membuat</p>
+            </div>
+
+            <div class="recipes-grid" id="recipesGrid">
+                <!-- Recipe cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-column">
+                    <h3 class="footer-brand">
+                        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 20s3-3 3-8-3-8-3-8m10 16s-3-3-3-8 3-8 3-8"></path>
+                        </svg>
+                        Sage Kitchen
+                    </h3>
+                    <p class="footer-motto">"Where Plants Meet Passion"</p>
+                    <p class="footer-text">Membawa kelezatan plant-based ke meja makan Anda sejak 2024.</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Hubungi Kami</h4>
+                    <div class="contact-list">
+                        <a href="tel:+628123456789" class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+62 812-3456-7890</span>
+                        </a>
+                        <a href="mailto:hello@sagekitchen.com" class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>hello@sagekitchen.com</span>
+                        </a>
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Jl. Sehat Alami No. 123<br>Jakarta Selatan, 12345</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Jam Operasional</h4>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="hours-day">Senin - Jumat:</span>
+                            <span>09:00 - 20:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-day">Sabtu - Minggu:</span>
+                            <span>10:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Sage Kitchen. Dibuat dengan 
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 20s3-3 3-8-3-8-3-8m10 16s-3-3-3-8 3-8 3-8"></path>
+                    </svg>
+                    untuk komunitas plant-based Indonesia.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Recipe Modal -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
